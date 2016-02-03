@@ -20,6 +20,7 @@ jenkins_user:
     - name: {{ user }}
     - groups:
       - {{ group }}
+    - remove_groups: False
     - require:
       - group: jenkins_group
 
